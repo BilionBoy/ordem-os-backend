@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class CreateTelefones < ActiveRecord::Migration[6.0]
+class CreateTelefones < ActiveRecord::Migration[7.2]
   def change
     create_table :telefones do |t|
       

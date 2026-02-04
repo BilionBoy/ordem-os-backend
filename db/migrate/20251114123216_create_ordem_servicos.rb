@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class CreateOrdemServicos < ActiveRecord::Migration[6.0]
+class CreateOrdemServicos < ActiveRecord::Migration[7.2]
   def change
     create_table :ordem_servicos do |t|
       

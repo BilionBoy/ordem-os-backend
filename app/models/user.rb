@@ -15,10 +15,19 @@ class User < ApplicationRecord
       sym = role.to_sym rescue nil
       self.role = ROLES[sym] if sym && ROLES.key?(sym)
     end
-    self.role ||= ROLE_VALUES.first
+
+    self.role = ROLES[:secretaria] if role.nil?
   end
 
   def role_name
     ROLES.key(role)&.to_s
+  end
+
+  def tecnico?
+    role == ROLES[:tecnico]
+  end
+
+  def secretaria?
+    role == ROLES[:secretaria]
   end
 end

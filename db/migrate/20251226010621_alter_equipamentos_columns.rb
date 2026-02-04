@@ -1,4 +1,4 @@
-class AlterEquipamentosColumns < ActiveRecord::Migration[8.0]
+class AlterEquipamentosColumns < ActiveRecord::Migration[7.2]
   def change
     # Remove colunas antigas se existirem
     remove_column :equipamentos, :modelo, :string if column_exists?(:equipamentos, :modelo)

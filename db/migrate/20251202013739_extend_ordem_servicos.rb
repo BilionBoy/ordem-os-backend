@@ -1,4 +1,4 @@
-class ExtendOrdemServicos < ActiveRecord::Migration[8.0]
+class ExtendOrdemServicos < ActiveRecord::Migration[7.2]
   def change
     add_column :ordem_servicos, :numero_ordem, :string
     add_column :ordem_servicos, :descricao, :string

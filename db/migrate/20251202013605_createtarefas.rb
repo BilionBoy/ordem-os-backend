@@ -1,4 +1,4 @@
-class Createtarefas < ActiveRecord::Migration[8.0]
+class Createtarefas < ActiveRecord::Migration[7.2]
   def change
     create_table :tarefas do |t|
       t.references :ordem_servico, null: false, foreign_key: true

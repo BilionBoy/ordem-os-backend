@@ -1,4 +1,4 @@
-class ChangeDataAgendamentoToDatetime < ActiveRecord::Migration[8.0]
+class ChangeDataAgendamentoToDatetime < ActiveRecord::Migration[7.2]
   def up
     change_column :ordem_servicos, :data_agendamento, :datetime
   end

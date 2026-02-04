@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class CreateEnderecos < ActiveRecord::Migration[6.0]
+class CreateEnderecos < ActiveRecord::Migration[7.2]
   def change
     create_table :enderecos do |t|
       

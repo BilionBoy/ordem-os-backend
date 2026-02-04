@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class CreateOsEquipamentos < ActiveRecord::Migration[6.0]
+class CreateOsEquipamentos < ActiveRecord::Migration[7.2]
   def change
     create_table :os_equipamentos do |t|
       

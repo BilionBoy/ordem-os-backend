@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class CreateClientes < ActiveRecord::Migration[6.0]
+class CreateClientes < ActiveRecord::Migration[7.2]
   def change
     create_table :clientes do |t|
       

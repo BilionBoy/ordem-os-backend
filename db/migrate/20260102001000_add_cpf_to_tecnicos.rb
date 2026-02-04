@@ -1,4 +1,4 @@
-class AddCpfToTecnicos < ActiveRecord::Migration[7.0]
+class AddCpfToTecnicos < ActiveRecord::Migration[7.2]
   def change
     add_column :tecnicos, :cpf, :string, null: false, unique: true
     add_index :tecnicos, :cpf, unique: true

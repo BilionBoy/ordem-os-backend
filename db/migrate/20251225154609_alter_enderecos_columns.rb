@@ -1,5 +1,5 @@
 
-class AlterEnderecosColumns < ActiveRecord::Migration[8.0]
+class AlterEnderecosColumns < ActiveRecord::Migration[7.2]
   def change
     remove_column :enderecos, :logradouro, :string if column_exists?(:enderecos, :logradouro)
     remove_column :enderecos, :cep, :string if column_exists?(:enderecos, :cep)
